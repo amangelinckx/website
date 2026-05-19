@@ -1,0 +1,81 @@
+---
+pagetitle: "AMx Architecture — Audrey MX"
+lang: fr
+---
+
+```{=html}
+<h1 class="sr-only">AMx Architecture — Audrey MANGELINCKX, architecte</h1>
+
+<div class="first-screen">
+
+<header class="hdr">
+  <a href="index.html" class="logo">AMx</a>
+  <nav class="hdr-nav">
+    <a href="conseils.html">Services</a>
+  </nav>
+  <a href="contact.html" class="hdr-cta">Contact</a>
+</header>
+
+<section class="hero-landing" aria-hidden="true">
+  <h2>AMx</h2>
+</section>
+
+<div class="ticker">
+  <p>
+    <span>Audrey MANGELINCKX</span><span class="dot">•</span>
+    <span>Architecte</span><span class="dot">•</span>
+    <span>10 ans d'expérience</span><span class="dot">•</span>
+    <span>Liège</span>
+  </p>
+</div>
+
+</div>
+
+<section class="svc-section">
+  <div class="svc-grid">
+    <a href="conseils.html" class="svc">
+      <div>
+        <span class="svc-num">01</span>
+        <span class="svc-name">Conseils</span>
+      </div>
+      <div class="svc-tags">
+        <span class="svc-tag">Conseils en aménagement</span>
+      </div>
+    </a>
+    <a href="urbanisme.html" class="svc">
+      <div>
+        <span class="svc-num">02</span>
+        <span class="svc-name">Urbanisme</span>
+      </div>
+      <div class="svc-tags">
+        <span class="svc-tag">Permis d'urbanisme</span>
+        <span class="svc-tag">Permis de régularisation</span>
+      </div>
+    </a>
+    <a href="projets.html" class="svc">
+      <div>
+        <span class="svc-num">03</span>
+        <span class="svc-name">Projets</span>
+      </div>
+      <div class="svc-tags">
+        <span class="svc-tag">Projets d'architecture</span>
+        <span class="svc-tag">Projets d'intérieur</span>
+      </div>
+    </a>
+    <a href="energie.html" class="svc">
+      <div>
+        <span class="svc-num">04</span>
+        <span class="svc-name">Énergie</span>
+      </div>
+      <div class="svc-tags">
+        <span class="svc-tag">Certificats PEB</span>
+        <span class="svc-tag">Audits énergétiques</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<footer class="ftr">
+  <a href="mailto:contact@amx-architecture.be" style="font-size:11px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:#71717a;text-decoration:none;">contact@amx-architecture.be</a>
+</footer>
+```
