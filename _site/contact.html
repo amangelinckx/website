@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>AMx Architecture — Contact</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300&amp;family=Oswald:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+
+
+
+<header class="hdr">
+  <a href="index.html" class="logo">AMx</a>
+  <nav class="hdr-nav">
+    <a href="conseils.html">Services</a>
+  </nav>
+  <a href="contact.html" class="hdr-cta" style="background:#27272a;">Contact</a>
+</header>
+
+<section class="contact-layout">
+
+  <div class="contact-left">
+    <div>
+      <h1 class="prest-title">Contact</h1>
+    </div>
+
+    <div class="contact-block">
+      <div class="step"><span class="step-n">•</span><span class="step-t">Audrey MANGELINCKX</span></div>
+      <div class="step"><span class="step-n">•</span><span class="step-t">4000-Liège</span></div>
+      <div class="step"><span class="step-n">•</span><a href="mailto:contact@amx-architecture.be" class="step-t" style="color:inherit;text-decoration:none;border-bottom:1px solid currentColor;">contact@amx-architecture.be</a></div>
+    </div>
+  </div>
+
+  <div class="contact-right">
+    <form class="contact-form" action="mailto:contact@amx-architecture.be" method="post" enctype="text/plain">
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="prenom">Prénom</label>
+          <input class="form-input" type="text" id="prenom" name="prenom" autocomplete="given-name" placeholder="Marie">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="nom">Nom</label>
+          <input class="form-input" type="text" id="nom" name="nom" autocomplete="family-name" placeholder="Dupont">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input class="form-input" type="email" id="email" name="email" autocomplete="email" placeholder="marie.dupont@email.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="telephone">Téléphone</label>
+          <input class="form-input" type="tel" id="telephone" name="telephone" autocomplete="tel" placeholder="+32 470 00 00 00">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="localisation">Localisation du projet</label>
+          <input class="form-input" type="text" id="localisation" name="localisation" placeholder="Ex. Liège, Seraing…">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="service">Service concerné</label>
+          <select class="form-input form-select" id="service" name="service">
+            <option value="" disabled="" selected="">Sélectionnez un service</option>
+            <option value="conseils">Conseils en aménagement</option>
+            <option value="permis-urbanisme">Permis d'urbanisme</option>
+            <option value="permis-regularisation">Permis de régularisation</option>
+            <option value="projets-architecture">Projets d'architecture</option>
+            <option value="projets-interieur">Projets d'intérieur</option>
+            <option value="Autre">Autre</option>
+
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="message">Message</label>
+        <textarea class="form-input form-textarea" id="message" name="message" rows="6" placeholder="Bonjour, je souhaite vous contacter au sujet d'un projet de rénovation de mon appartement…"></textarea>
+      </div>
+
+      <button type="submit" class="hdr-cta form-submit">Envoyer</button>
+
+    </form>
+  </div>
+
+</section>
+
+<script>
+  document.getElementById('service').addEventListener('change', function() {
+    this.classList.add('selected');
+  });
+</script>
+
+<footer class="ftr">
+  <a href="mailto:contact@amx-architecture.be" style="font-size:11px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:#71717a;text-decoration:none;">contact@amx-architecture.be</a>
+</footer>
+
+
+
+
+
+
+</body></html>
