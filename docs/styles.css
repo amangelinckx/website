@@ -76,10 +76,6 @@ body:has(.first-view) { padding-top: 0; }
 .nav-item.active { color: var(--text-primary); border-bottom-color: transparent; text-decoration: underline; text-decoration-color: #1a1a1a; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .nav-item:hover:not(.active) { color: var(--text-secondary); }
 
-/* ===== Image block ===== */
-.img-block { background: var(--bg-secondary); border-radius: var(--radius-md); border: 0.5px solid var(--border); aspect-ratio: unset; height: calc((50vw - 4rem) * 0.75 + 300px); overflow: hidden; }
-.img-block img { width: 100%; height: 100%; object-fit: cover; display: block; }
-
 /* ===== Prestations ===== */
 .prestations { border-bottom: 0.5px solid var(--border); }
 .prest { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 0.5px solid var(--border); }
@@ -95,13 +91,15 @@ body:has(.first-view) { padding-top: 0; }
 .prest-desc + .sec-label { margin-top: 2rem; }
 .prest-right { padding: 2.5rem 2rem; display: flex; flex-direction: column; gap: 1.5rem; justify-content: center; }
 .prest.has-img .prest-right { justify-content: flex-start; padding-top: calc(2.5rem + clamp(12px, 0.47vw, 16px) + clamp(60px, 2.34vw, 96px) * 2.4 + 0.75rem); }
+.img-block { background: var(--bg-secondary); border-radius: var(--radius-md); border: 0.5px solid var(--border); aspect-ratio: unset; height: calc((50vw - 4rem) * 0.75 + 300px); overflow: hidden; }
+.img-block img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .img-tall { aspect-ratio: unset; height: calc((50vw - 4rem) * 0.75 + 350px); }
 .steps-block { display: flex; flex-direction: column; gap: 0.25rem; margin-top: 1.5rem; }
 .sec-label { font-size: clamp(12px, 0.47vw, 16px); font-weight: 450; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-primary); margin-bottom: 1.5rem; padding: 6px 0; border-bottom: 0.5px solid #1a1a1a; line-height: 1; }
 .prest-right > .sec-label { margin-bottom: 0; border-bottom: none; border-top: 0.5px solid #1a1a1a; }
 .prest-right > .text-accroche { padding-left: 8rem; padding-right: 8rem; }
 .prest-right > .prest-desc { padding-left: 8rem; padding-right: 8rem; }
-.prest-right > .steps-block .prest-desc { padding-right: 8rem; }
+.prest-right > .steps-block .prest-desc { padding-left: 8rem; padding-right: 8rem; }
 .prest-right > .steps-block > .text-accroche { padding-left: 8rem; padding-right: 8rem; }
 .prest-right > .steps-block { margin-top: 0; }
 .prest-right > .steps-block > .prest-num { border-top: 0.5px solid #1a1a1a; padding: 6px 0; margin-bottom: 0; }
@@ -110,7 +108,6 @@ body:has(.first-view) { padding-top: 0; }
 .step-n { font-size: clamp(15px, 0.59vw, 22px); font-weight: 300; color: #1a1a1a; min-width: 15px; margin-top: 0px; }
 .step-t { font-size: clamp(15px, 0.59vw, 22px); font-weight: 300; line-height: 1.65; color: var(--text-primary); max-width: 75ch; }
 
-/* ===== Prestation sub-cards ===== */
 .prest-sub-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; flex: 1; }
 .prest-sub-cards--4 { grid-template-columns: repeat(2, 1fr); margin-left: 8rem; margin-right: 8rem; }
 .prest-sub-cards--3 { grid-template-columns: repeat(3, 1fr); }
@@ -179,7 +176,7 @@ body:has(.first-view) { padding-top: 0; }
 .placeholder-title { font-family: 'Oswald', sans-serif; font-size: clamp(44px, 1.72vw, 70px); font-weight: 400; color: var(--text-primary); margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: -0.01em; }
 .placeholder-sub { font-size: clamp(14px, 0.55vw, 20px); color: var(--text-secondary); font-weight: 300; }
 
-/* ===== Contact page ===== */
+/* ===== Contact ===== */
 .contact-layout { display: grid; grid-template-columns: 1fr 2fr 1fr; border-bottom: 0.5px solid var(--border); flex: 1; }
 .contact-photo { position: relative; border-left: 0.5px solid var(--border); overflow: hidden; }
 .contact-photo img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -191,7 +188,6 @@ body:has(.first-view) { padding-top: 0; }
 .contact-value { font-size: clamp(14px, 0.55vw, 20px); font-weight: 300; color: var(--text-primary); line-height: 1.65; }
 .contact-note { font-size: clamp(11px, 0.43vw, 15px); font-weight: 300; color: var(--text-tertiary); line-height: 1.65; }
 
-/* ===== Contact form ===== */
 .contact-form { display: flex; flex-direction: column; gap: 2rem; padding-left: 8rem; padding-right: 8rem; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
 .form-group { display: flex; flex-direction: column; gap: 0.25rem; }
@@ -233,7 +229,6 @@ body:has(.first-view) { padding-top: 0; }
 .prest-col .steps-block { margin-top: 0; }
 .prest-col .step-t { font-size: clamp(13px, 0.51vw, 17px); }
 .prest-col .step-n { font-size: clamp(13px, 0.51vw, 17px); }
-
 .prest3-card-name { font-family: 'Oswald', sans-serif; font-size: clamp(30px, 1.17vw, 48px); font-weight: 600; text-transform: uppercase; letter-spacing: 0; color: var(--text-primary); line-height: 1.2; }
 
 /* ===== Responsive ===== */
