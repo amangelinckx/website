@@ -1,4 +1,4 @@
----
+﻿---
 pagetitle: "AMx Architecture — Audrey MX"
 lang: fr
 ---
@@ -6,32 +6,53 @@ lang: fr
 ```{=html}
 <h1 class="sr-only">AMx Architecture — Audrey MANGELINCKX, architecte</h1>
 
+<div class="first-view">
+
 <div class="first-screen">
 
 <header class="hdr">
-  <a href="index.html" class="logo">AMx</a>
+  <a href="index.html" class="logo"><img src="images/AMxARCHI_Logo-241023.png" alt="AMx Architecture" class="logo-img"></a>
   <nav class="hdr-nav">
-    <a href="conseils.html">Services</a>
+    <button onclick="toggleNav(this)" aria-expanded="false">Services</button>
+    <a href="apropos.html">À propos</a>
   </nav>
   <a href="contact.html" class="hdr-cta">Contact</a>
 </header>
 
-<section class="hero-landing" aria-hidden="true">
-  <h2>AMx</h2>
+<nav class="nav-bar">
+  <a href="conseils.html" class="nav-item">01 Conseils</a>
+  <a href="urbanisme.html" class="nav-item">02 Urbanisme</a>
+  <a href="projets.html" class="nav-item">03 Projets</a>
+  <a href="energie.html" class="nav-item">04 Énergie</a>
+</nav>
+
+<section class="hero-landing">
+  <p class="prest-num hero-label">AMx Architecture</p>
+  <img src="images/AMxARCHI_Logo-241023.png" alt="AMx Architecture" class="hero-logo">
 </section>
 
-<div class="ticker">
-  <p>
-    <span>Audrey MANGELINCKX</span><span class="dot">•</span>
-    <span>Architecte</span><span class="dot">•</span>
-    <span>10 ans d'expérience</span><span class="dot">•</span>
-    <span>Liège</span>
-  </p>
 </div>
+
+<section class="landing-intro">
+  <div class="prest-num landing-intro-num">A propos</div>
+  <p class="landing-intro-left">J'accompagne particuliers et professionnels dans la conception, la rénovation et la transformation d'espaces — du premier conseil au permis, du dessin au chantier achevé.<br>Dix années de pratique au service de projets pensés pour durer.</p>
+  <div class="landing-intro-right">
+    <p>Une architecture posée, précise et habitée. Ne pas construire pour aller vite, construire pour durer.</p>
+    <div class="landing-intro-btns">
+      <span class="landing-intro-author">— Audrey MANGELINCKX, Architecte —</span>
+      <div class="landing-intro-btns-right">
+        <a href="apropos.html" class="cta-secondary">À propos</a>
+        <a href="contact.html" class="hdr-cta">Contact</a>
+      </div>
+    </div>
+  </div>
+</section>
 
 </div>
 
 <section class="svc-section">
+  <div class="prest-num">Services</div>
+  <h2 class="prest-title">Quatre champs d'intervention</h2>
   <div class="svc-grid">
     <a href="conseils.html" class="svc">
       <div>
@@ -39,7 +60,7 @@ lang: fr
         <span class="svc-name">Conseils</span>
       </div>
       <div class="svc-tags">
-        <span class="svc-tag">Conseils en aménagement</span>
+          <span class="svc-tag">Conseils en aménagement</span>
       </div>
     </a>
     <a href="urbanisme.html" class="svc">
@@ -48,8 +69,8 @@ lang: fr
         <span class="svc-name">Urbanisme</span>
       </div>
       <div class="svc-tags">
-        <span class="svc-tag">Permis d'urbanisme</span>
-        <span class="svc-tag">Permis de régularisation</span>
+          <span class="svc-tag">Permis d'urbanisme</span>
+          <span class="svc-tag">Permis de régularisation</span>
       </div>
     </a>
     <a href="projets.html" class="svc">
@@ -58,8 +79,8 @@ lang: fr
         <span class="svc-name">Projets</span>
       </div>
       <div class="svc-tags">
-        <span class="svc-tag">Projets d'architecture</span>
-        <span class="svc-tag">Projets d'intérieur</span>
+          <span class="svc-tag">Projets d'architecture</span>
+          <span class="svc-tag">Projets d'intérieur</span>
       </div>
     </a>
     <a href="energie.html" class="svc">
@@ -68,14 +89,36 @@ lang: fr
         <span class="svc-name">Énergie</span>
       </div>
       <div class="svc-tags">
-        <span class="svc-tag">Certificats PEB</span>
-        <span class="svc-tag">Audits énergétiques</span>
+          <span class="svc-tag">Certificats PEB</span>
+          <span class="svc-tag">Audits énergétiques</span>
       </div>
     </a>
   </div>
 </section>
 
+<section class="cta-band">
+  <h2 class="prest-title">Parlons de<br>votre projet.</h2>
+  <p class="cta-sub">Un projet en tête, une question urbanistique, besoin d'un permis d'urbanisme ?<br>Le premier échange est toujours gratuit — et sans engagement.</p>
+  <a href="contact.html" class="hdr-cta">Prendre contact</a>
+</section>
+
 <footer class="ftr">
-  <a href="mailto:contact@amx-architecture.be" style="font-size:11px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:#71717a;text-decoration:none;">contact@amx-architecture.be</a>
+  <a href="index.html" class="ftr-logo"><img src="images/AMxARCHI_Logo-241023.png" alt="AMx Architecture" class="ftr-logo-img"></a>
+  <span class="ftr-name"><span class="ftr-name-title">AMx Architecture</span><br>Audrey Mangelinckx<br>Studio d'architecture indépendant.<br>Inscrite à l'Ordre des Architectes</span>
+  <div class="ftr-cols">
+    <nav class="ftr-links">
+      <span class="ftr-links-title">Services</span>
+      <a href="conseils.html">Conseils</a>
+      <a href="urbanisme.html">Urbanisme</a>
+      <a href="projets.html">Projets</a>
+      <a href="energie.html">Énergie</a>
+    </nav>
+    <div class="ftr-contact">
+      <span class="ftr-contact-title">Contact</span>
+      <a href="mailto:contact@amx-architecture.be">contact@amx-architecture.be</a>
+      <span>4000-Liège</span>
+    </div>
+  </div>
 </footer>
+
 ```

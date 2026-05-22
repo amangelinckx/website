@@ -1,22 +1,23 @@
----
+﻿---
 pagetitle: "AMX Architecture — Projets"
 lang: fr
 ---
 
 ```{=html}
 <header class="hdr">
-  <a href="index.html" class="logo">AMx</a>
+  <a href="index.html" class="logo"><img src="images/AMxARCHI_Logo-241023.png" alt="AMx Architecture" class="logo-img"></a>
   <nav class="hdr-nav">
-    <a href="conseils.html" class="active">Services</a>
+    <button class="active" onclick="toggleNav(this)" aria-expanded="false">Services</button>
+    <a href="apropos.html">À propos</a>
   </nav>
   <a href="contact.html" class="hdr-cta">Contact</a>
 </header>
 
 <nav class="nav-bar">
-  <a href="conseils.html" class="nav-item"><span class="nav-num">01</span> Conseils</a>
-  <a href="urbanisme.html" class="nav-item"><span class="nav-num">02</span> Urbanisme</a>
-  <a href="projets.html" class="nav-item active"><span class="nav-num">03</span> Projets</a>
-  <a href="energie.html" class="nav-item"><span class="nav-num">04</span> Énergie</a>
+  <a href="conseils.html" class="nav-item">01 Conseils</a>
+  <a href="urbanisme.html" class="nav-item">02 Urbanisme</a>
+  <a href="projets.html" class="nav-item active">03 Projets</a>
+  <a href="energie.html" class="nav-item">04 Énergie</a>
 </nav>
 
 <section class="prestations">
@@ -35,16 +36,40 @@ lang: fr
         <p>Je travaille exclusivement sur le bâti existant — rénovation, transformation et extension d'habitations unifamiliales et d'appartements. Chaque intervention part d'une lecture attentive du bâtiment : ce qu'il est, ce qu'il contraint, ce qu'il permet.</p>
         <p>L'enjeu n'est pas de tout repenser, mais de trouver les gestes justes — ceux qui améliorent durablement la qualité des espaces, la lumière, les circulations, sans trahir l'équilibre du lieu. Une rénovation réussie ne s'impose pas au bâtiment : elle révèle ce qu'il avait en lui.</p>
       </div>
-      <div class="steps-block">
-        <p class="sec-label">La prestation comprend :</p>
-        <div class="step"><span class="step-n">•</span><span class="step-t">Analyse du bâtiment et de son potentiel</span></div>
-        <div class="step"><span class="step-n">•</span><span class="step-t">Étude des besoins et définition du projet</span></div>
-        <div class="step"><span class="step-n">•</span><span class="step-t">Conception architecturale et optimisation des espaces</span></div>
-        <div class="step"><span class="step-n">•</span><span class="step-t">Réalisation des plans et du dossier de permis d'urbanisme</span></div>
-        <div class="step"><span class="step-n">•</span><span class="step-t">Préparation des documents techniques</span></div>
-        <div class="step"><span class="step-n">•</span><span class="step-t">Consultation des entreprises et analyse des offres</span></div>
-        <div class="step"><span class="step-n">•</span><span class="step-t">Coordination des intervenants</span></div>
-        <div class="step"><span class="step-n">•</span><span class="step-t">Suivi et accompagnement du chantier</span></div>
+      <p class="sec-label">Processus</p>
+      <div class="prest-sub-cards prest-sub-cards--4">
+        <div class="prest-sub-card">
+          <span class="prest-num">Étape 01</span>
+          <h3 class="prest-sub-card-title">Études préalables</h3>
+          <div class="steps-block">
+            <div class="step"><span class="step-n">—</span><span class="step-t">Analyse du bâtiment et de son potentiel</span></div>
+            <div class="step"><span class="step-n">—</span><span class="step-t">Étude des besoins et définition du projet</span></div>
+          </div>
+        </div>
+        <div class="prest-sub-card">
+          <span class="prest-num">Étape 02</span>
+          <h3 class="prest-sub-card-title">Conception & permis</h3>
+          <div class="steps-block">
+            <div class="step"><span class="step-n">—</span><span class="step-t">Conception architecturale et optimisation des espaces</span></div>
+            <div class="step"><span class="step-n">—</span><span class="step-t">Réalisation des plans et du dossier de permis d'urbanisme</span></div>
+          </div>
+        </div>
+        <div class="prest-sub-card">
+          <span class="prest-num">Étape 03</span>
+          <h3 class="prest-sub-card-title">Dossier d'exécution</h3>
+          <div class="steps-block">
+            <div class="step"><span class="step-n">—</span><span class="step-t">Préparation des documents techniques</span></div>
+            <div class="step"><span class="step-n">—</span><span class="step-t">Consultation des entreprises et analyse des offres</span></div>
+          </div>
+        </div>
+        <div class="prest-sub-card">
+          <span class="prest-num">Étape 04</span>
+          <h3 class="prest-sub-card-title">Suivi & chantier</h3>
+          <div class="steps-block">
+            <div class="step"><span class="step-n">—</span><span class="step-t">Coordination des intervenants</span></div>
+            <div class="step"><span class="step-n">—</span><span class="step-t">Suivi et accompagnement du chantier</span></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -64,16 +89,34 @@ lang: fr
         <p>Lorsque le projet ne nécessite pas de permis, j'interviens à l'échelle de l'intérieur : réorganisation des pièces, optimisation des circulations, choix des matériaux, mobilier sur mesure, conception des espaces de vie.</p>
         <p>L'approche reste la même qu'en architecture — fonctionnelle d'abord, esthétique par cohérence. Chaque décision — une cloison déplacée, un matériau choisi, une proportion ajustée — contribue à un ensemble qui fonctionne bien, longtemps, pour ceux qui l'habitent. Un intérieur réussi n'est pas celui qui impressionne au premier regard, mais celui qu'on ne veut plus quitter.</p>
       </div>
-      <div class="steps-block">
-        <p class="sec-label">La prestation comprend :</p>
-        <div class="step"><span class="step-n">•</span><span class="step-t">Analyse et optimisation des espaces existants</span></div>
-        <div class="step"><span class="step-n">•</span><span class="step-t">Réorganisation des pièces et circulations</span></div>
-        <div class="step"><span class="step-n">•</span><span class="step-t">Plans d'aménagement intérieur</span></div>
-        <div class="step"><span class="step-n">•</span><span class="step-t">Étude de mobiliers sur mesure</span></div>
-        <div class="step"><span class="step-n">•</span><span class="step-t">Conseils matériaux, couleurs et ambiances</span></div>
-        <div class="step"><span class="step-n">•</span><span class="step-t">Conception de cuisines, séjours et espaces de vie</span></div>
-        <div class="step"><span class="step-n">•</span><span class="step-t">Accompagnement dans les choix techniques et esthétiques</span></div>
-        <div class="step"><span class="step-n">•</span><span class="step-t">Suivi et accompagnement du chantier</span></div>
+      <p class="sec-label">Processus</p>
+      <div class="prest-sub-cards prest-sub-cards--3">
+        <div class="prest-sub-card">
+          <span class="prest-num">Étape 01</span>
+          <h3 class="prest-sub-card-title">Analyse de l'espace</h3>
+          <div class="steps-block">
+            <div class="step"><span class="step-n">—</span><span class="step-t">Analyse et optimisation des espaces existants</span></div>
+            <div class="step"><span class="step-n">—</span><span class="step-t">Réorganisation des pièces et circulations</span></div>
+            <div class="step"><span class="step-n">—</span><span class="step-t">Conception de cuisines, séjours et espaces de vie</span></div>
+          </div>
+        </div>
+        <div class="prest-sub-card">
+          <span class="prest-num">Étape 02</span>
+          <h3 class="prest-sub-card-title">Plans & mobilier</h3>
+          <div class="steps-block">
+            <div class="step"><span class="step-n">—</span><span class="step-t">Plans d'aménagement intérieur</span></div>
+           <div class="step"><span class="step-n">—</span><span class="step-t">Étude de mobiliers sur mesure</span></div>
+          </div>
+        </div>
+        <div class="prest-sub-card">
+          <span class="prest-num">Étape 03</span>
+          <h3 class="prest-sub-card-title">Suivi & chantier</h3>
+          <div class="steps-block">
+            <div class="step"><span class="step-n">—</span><span class="step-t">Conseils matériaux, couleurs et ambiances</span></div>
+            <div class="step"><span class="step-n">—</span><span class="step-t">Accompagnement dans les choix techniques et esthétiques</span></div>
+            <div class="step"><span class="step-n">—</span><span class="step-t">Suivi et accompagnement du chantier</span></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -87,7 +130,7 @@ lang: fr
 <section class="faq-section">
   <div class="faq-left">
     <div class="prest-num">FAQ</div>
-    <h2 class="prest-title">Questions<br>fréquentes</h2>
+    <h2 class="prest-title">Questions fréquentes</h2>
   </div>
   <div class="faq-right">
   <div class="accordion">
@@ -120,11 +163,30 @@ lang: fr
       <div class="acc-body">J'interviens principalement à Liège et en périphérie liégeoise. Pour des demandes spécifiques ou des projets situés en dehors de ce périmètre, une étude au cas par cas peut être envisagée.</div>
     </div>
   </div>
+  <div class="faq-cta-row">
+    <p class="faq-sub">Vous ne trouvez pas la réponse à votre question ?</p>
+    <a href="contact.html" class="cta-secondary">Contactez-moi</a>
+  </div>
   </div>
 </section>
 
 <footer class="ftr">
-  <a href="mailto:contact@amx-architecture.be" style="font-size:11px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:#71717a;text-decoration:none;">contact@amx-architecture.be</a>
+  <a href="index.html" class="ftr-logo"><img src="images/AMxARCHI_Logo-241023.png" alt="AMx Architecture" class="ftr-logo-img"></a>
+  <span class="ftr-name"><span class="ftr-name-title">AMx Architecture</span><br>Audrey Mangelinckx<br>Studio d'architecture indépendant.<br>Inscrite à l'Ordre des Architectes</span>
+  <div class="ftr-cols">
+    <nav class="ftr-links">
+      <span class="ftr-links-title">Services</span>
+      <a href="conseils.html">Conseils</a>
+      <a href="urbanisme.html">Urbanisme</a>
+      <a href="projets.html">Projets</a>
+      <a href="energie.html">Énergie</a>
+    </nav>
+    <div class="ftr-contact">
+      <span class="ftr-contact-title">Contact</span>
+      <a href="mailto:contact@amx-architecture.be">contact@amx-architecture.be</a>
+      <span>4000-Liège</span>
+    </div>
+  </div>
 </footer>
 
 <script>

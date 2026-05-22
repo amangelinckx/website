@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>AMx Architecture — Contact</title>
+<title>contact</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,12 +39,20 @@ ul.task-list li input[type="checkbox"] {
 
 
 <header class="hdr">
-  <a href="index.html" class="logo">AMx</a>
+  <a href="index.html" class="logo"><img src="images/AMxARCHI_Logo-241023.png" alt="AMx Architecture" class="logo-img"></a>
   <nav class="hdr-nav">
-    <a href="conseils.html">Services</a>
+    <button onclick="toggleNav(this)" aria-expanded="false">Services</button>
+    <a href="apropos.html">À propos</a>
   </nav>
   <a href="contact.html" class="hdr-cta" style="background:#27272a;">Contact</a>
 </header>
+
+<nav class="nav-bar">
+  <a href="conseils.html" class="nav-item">01 Conseils</a>
+  <a href="urbanisme.html" class="nav-item">02 Urbanisme</a>
+  <a href="projets.html" class="nav-item">03 Projets</a>
+  <a href="energie.html" class="nav-item">04 Énergie</a>
+</nav>
 
 <section class="contact-layout">
 
@@ -115,6 +123,8 @@ ul.task-list li input[type="checkbox"] {
     </form>
   </div>
 
+  <div class="contact-photo"><img src="images/pexels-thanh-luu-29104820-11149437.jpg" alt=""></div>
+
 </section>
 
 <script>
@@ -124,10 +134,54 @@ ul.task-list li input[type="checkbox"] {
 </script>
 
 <footer class="ftr">
-  <a href="mailto:contact@amx-architecture.be" style="font-size:11px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:#71717a;text-decoration:none;">contact@amx-architecture.be</a>
+  <a href="index.html" class="ftr-logo"><img src="images/AMxARCHI_Logo-241023.png" alt="AMx Architecture" class="ftr-logo-img"></a>
+  <span class="ftr-name"><span class="ftr-name-title">AMx Architecture</span><br>Audrey Mangelinckx<br>Studio d'architecture indépendant.<br>Inscrite à l'Ordre des Architectes</span>
+  <div class="ftr-cols">
+    <nav class="ftr-links">
+      <span class="ftr-links-title">Services</span>
+      <a href="conseils.html">Conseils</a>
+      <a href="urbanisme.html">Urbanisme</a>
+      <a href="projets.html">Projets</a>
+      <a href="energie.html">Énergie</a>
+    </nav>
+    <div class="ftr-contact">
+      <span class="ftr-contact-title">Contact</span>
+      <a href="mailto:contact@amx-architecture.be">contact@amx-architecture.be</a>
+      <span>4000-Liège</span>
+    </div>
+  </div>
 </footer>
 
 
+<script>
+function toggleNav(btn) {
+  var navBar = document.querySelector('.nav-bar');
+  if (!navBar) return;
+  var open = navBar.classList.toggle('open');
+  btn.setAttribute('aria-expanded', String(open));
+  if (!document.querySelector('.first-view')) {
+    document.body.classList.toggle('nav-open', open);
+  }
+}
+document.addEventListener('click', function(e) {
+  if (e.target.closest('.nav-bar') || e.target.closest('.hdr-nav')) return;
+  if (document.querySelector('.nav-item.active')) return;
+  var navBar = document.querySelector('.nav-bar');
+  if (navBar && navBar.classList.contains('open')) {
+    navBar.classList.remove('open');
+    document.body.classList.remove('nav-open');
+  }
+});
+document.addEventListener('DOMContentLoaded', function() {
+  if (document.querySelector('.nav-item.active')) {
+    var navBar = document.querySelector('.nav-bar');
+    if (navBar) {
+      navBar.classList.add('open');
+      document.body.classList.add('nav-open');
+    }
+  }
+});
+</script>
 
 
 
